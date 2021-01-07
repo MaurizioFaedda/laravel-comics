@@ -31,10 +31,39 @@
     }
     .more-button{
         text-align: center;
+        padding-bottom: 14px;
         a{
             background-color: $main_color;
             color: $light_color;
             padding: 10px 80px;
+        }
+    }
+}
+
+.section-action{
+    background-color: $main_color;
+    color: $light_color;
+    .action-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 0;
+        .action-box{
+            display: flex;
+            align-items: center;
+            .action-img{
+                width: 55px;
+                padding-right: 10px;
+                &#local-logo{
+                    width: 42px;
+                }
+                &#digital-logo{
+                    width: 45px;
+                }
+                img, svg {
+                    width: 100%;
+                }
+            }
         }
     }
 }

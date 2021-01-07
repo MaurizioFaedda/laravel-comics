@@ -512,11 +512,47 @@ header .header-bottom .nav-menu li a:hover {
 
 .section-series .more-button {
   text-align: center;
+  padding-bottom: 14px;
 }
 
 .section-series .more-button a {
   background-color: #0182f9;
   color: #fff;
   padding: 10px 80px;
+}
+
+.section-action {
+  background-color: #0182f9;
+  color: #fff;
+}
+
+.section-action .action-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.section-action .action-container .action-box {
+  display: flex;
+  align-items: center;
+}
+
+.section-action .action-container .action-box .action-img {
+  width: 55px;
+  padding-right: 10px;
+}
+
+.section-action .action-container .action-box .action-img#local-logo {
+  width: 42px;
+}
+
+.section-action .action-container .action-box .action-img#digital-logo {
+  width: 45px;
+}
+
+.section-action .action-container .action-box .action-img img,
+.section-action .action-container .action-box .action-img svg {
+  width: 100%;
 }
 
