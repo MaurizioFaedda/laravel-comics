@@ -390,7 +390,8 @@ h4,
 h4,
 h5,
 h6,
-a {
+a,
+span {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -561,7 +562,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 400px;
 }
 
 footer .footer-top {
@@ -571,12 +571,40 @@ footer .footer-top {
 
 footer .footer-top .footer-menu {
   width: 50%;
-  height: 400px;
+}
+
+footer .footer-top .footer-menu .ul-footer {
+  display: flex;
+}
+
+footer .footer-top .footer-menu .ul-footer .menu-footer-list ul {
+  margin: 0;
+  padding: 0 20px 10px 0;
+  list-style-type: none;
+}
+
+footer .footer-top .footer-menu .ul-footer .menu-footer-list ul h2 {
+  color: #fff;
+}
+
+footer .footer-top .footer-menu .ul-footer .menu-footer-list ul li {
+  padding: 4px 0;
+}
+
+footer .footer-top .footer-menu .ul-footer .menu-footer-list ul li a {
+  color: #666666;
+}
+
+footer .footer-top .footer-menu span {
+  color: #666666;
+}
+
+footer .footer-top .footer-menu span a {
+  color: #0182f9;
 }
 
 footer .footer-top .footer-right {
   width: 50%;
-  height: 400px;
   background-image: url("/images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;

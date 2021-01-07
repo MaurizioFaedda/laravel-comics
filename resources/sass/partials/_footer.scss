@@ -3,17 +3,40 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 400px;
     .footer-top{
         width: 100%;
         display: flex;
         .footer-menu{
             width: 50%;
-            height: 400px;
+            .ul-footer{
+                display: flex;
+                .menu-footer-list{
+                    ul{
+                        margin: 0;
+                        padding: 0 20px 10px 0;
+                        list-style-type: none;
+                        h2{
+                            color: $light_color;
+                        }
+                        li{
+                            padding: 4px 0;
+                            a{
+                                color: darken($light_color, 60%);
+
+                            }
+                        }
+                    }
+                }
+            }
+            span{
+                color: darken($light_color, 60%);
+                a{
+                    color: $main_color;
+                }
+            }
         }
         .footer-right{
             width: 50%;
-            height: 400px;
             background-image: url('/images/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: center;
