@@ -571,6 +571,7 @@ footer .footer-top {
 
 footer .footer-top .footer-menu {
   width: 50%;
+  padding-bottom: 20px;
 }
 
 footer .footer-top .footer-menu .ul-footer {
@@ -608,5 +609,52 @@ footer .footer-top .footer-right {
   background-image: url("/images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+footer .footer-bottom {
+  background-color: #1c1c1c;
+}
+
+footer .footer-bottom .footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-bottom .footer-bottom-content .sign-button {
+  padding: 40px 0;
+}
+
+footer .footer-bottom .footer-bottom-content .sign-button h3 {
+  margin: 0;
+}
+
+footer .footer-bottom .footer-bottom-content .sign-button h3 a {
+  color: #fff;
+  padding: 16px 14px;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  border: 2px solid #0182f9;
+}
+
+footer .footer-bottom .footer-bottom-content .sign-button h3 a:hover {
+  background-color: #0182f9;
+}
+
+footer .footer-bottom .footer-bottom-content .social-box {
+  display: flex;
+}
+
+footer .footer-bottom .footer-bottom-content .social-box h2 {
+  color: #0182f9;
+}
+
+footer .footer-bottom .footer-bottom-content .social-box ul {
+  display: flex;
+  list-style-type: none;
+}
+
+footer .footer-bottom .footer-bottom-content .social-box ul li {
+  padding-left: 20px;
 }
 

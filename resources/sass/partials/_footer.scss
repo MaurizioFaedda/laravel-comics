@@ -8,6 +8,7 @@ footer{
         display: flex;
         .footer-menu{
             width: 50%;
+            padding-bottom: 20px;
             .ul-footer{
                 display: flex;
                 .menu-footer-list{
@@ -40,6 +41,48 @@ footer{
             background-image: url('/images/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: center;
+        }
+
+    }
+    .footer-bottom{
+
+        background-color: $dark_color;
+        .footer-bottom-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sign-button{
+                padding: 40px 0;
+                h3{
+                margin: 0;
+                    a{
+                        color: $light_color;
+                        padding: 16px 14px;
+                        font-family: 'Open Sans', sans-serif;
+                        display: inline-block;
+                        border: 2px solid $main_color;
+                        &:hover{
+                            background-color: $main_color;
+                        }
+                    }
+                }
+
+
+            }
+            .social-box{
+                display: flex;
+                h2{
+                    color: $main_color;
+                }
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    li{
+                        padding-left: 20px;
+                    }
+                }
+            }
+
         }
 
     }
