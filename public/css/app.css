@@ -556,3 +556,29 @@ header .header-bottom .nav-menu li a:hover {
   width: 100%;
 }
 
+footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 400px;
+}
+
+footer .footer-top {
+  width: 100%;
+  display: flex;
+}
+
+footer .footer-top .footer-menu {
+  width: 50%;
+  height: 400px;
+}
+
+footer .footer-top .footer-right {
+  width: 50%;
+  height: 400px;
+  background-image: url("/images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
