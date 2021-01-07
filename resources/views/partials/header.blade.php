@@ -60,7 +60,9 @@
                     </ul>
                 </div>
                 <div class="search-bar">
-                    <input type="text" name="" value="">
+                    <input placeholder="Search" type="text" name="" value="">
+                    <div class="icon">
+                    </div>
                 </div>
             </div>
         </div>

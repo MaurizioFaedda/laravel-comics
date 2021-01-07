@@ -52,6 +52,29 @@ header{
                 }
             }
 
+            .search-bar{
+                width: 10%;
+                border-bottom: 2px solid $main_color;
+                display: flex;
+                justify-content: flex-end;
+                input{
+                    text-align: right;
+                    color: $dark_color;
+                    font-weight: bold;
+                    width: 70%;
+                    border: none;
+                    outline: none;
+                    padding-right: 6px;
+                }
+                .icon::after{
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f002";
+                    color: $dark_color;
+
+                }
+            }
+
 
         }
 
