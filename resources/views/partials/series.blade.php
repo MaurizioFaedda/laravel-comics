@@ -5,13 +5,17 @@
         </div>
         <div class="cards">
             @foreach ($series as $serie)
+
                 <div class="card">
-                    <div class="serie-img">
-                        <img src="{{$serie['thumb']}}" alt="">
-                    </div>
+                    <a href="#">
+                        <div class="serie-img">
+                            <img src="{{$serie['thumb']}}" alt="">
+                        </div>
+                    </a>
                     <h3>{{ $serie['series']}}</h3>
 
                 </div>
+
             @endforeach
         </div>
         <div class="more-button">
