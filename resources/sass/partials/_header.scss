@@ -1,0 +1,22 @@
+.header-top{
+    background-color: $main_color;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: right;
+        li{
+            display: inline-block;
+            &:last-child{
+                padding-left: 60px;
+            }
+            a{
+                color: #fff;
+                font-size: 12px;
+                display: inline-block;
+                font-weight: 600;
+                padding: 5px;
+            }
+        }
+    }
+}
