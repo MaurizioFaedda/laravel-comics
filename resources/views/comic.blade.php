@@ -3,17 +3,20 @@
 @section('content')
     @include('partials.jumbotron')
     <section id="single-comic">
-        <div class="thumb-img container-sx">
-            <div class="img-comics-box">
-                <div class="img-comics-content">
-                    <div class="comic-small label">
-                        <small class="uppercase">comic book</small>
-                    </div>
-                    <img src="{{ $comic['thumb']}}" alt="">
-                    <div class="view-gallery label">
-                        <small class="uppercase">view gallery</small>
+        <div class="thumb-img">
+            <div class="container-sx">
+                <div class="img-comics-box">
+                    <div class="img-comics-content">
+                        <div class="comic-small label">
+                            <small class="uppercase">comic book</small>
+                        </div>
+                        <img src="{{ $comic['thumb']}}" alt="">
+                        <div class="view-gallery label">
+                            <small class="uppercase">view gallery</small>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="details-comic">
@@ -27,7 +30,10 @@
                             </div>
                             <div class="check-comic">
                                 <h4 class="uppercase">available</h4>
-                                <h4>Buy Now ▾</h4>
+                                <h4>
+                                    <a href="#">Buy Now ▾</a>
+
+                                </h4>
                             </div>
                         </div>
                         <div class="info-comic">
@@ -88,6 +94,36 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons-boxes">
+            <div class="container-sx">
+                <div class="icons-content uppercase">
+                    <div class="single-icon">
+                        <a href="#">
+                            <span class="icon-text">digital comics</span>
+                            <div class="icon-img"></div>
+                        </a>
+                    </div>
+                    <div class="single-icon">
+                        <a href="#">
+                            <span class="icon-text">shop dc</span>
+                            <div class="icon-img"></div>
+                        </a>
+                    </div>
+                    <div class="single-icon">
+                        <a href="#">
+                            <span class="icon-text">comic shop locator</span>
+                            <div class="icon-img"></div>
+                        </a>
+                    </div>
+                    <div class="single-icon">
+                        <a href="#">
+                            <span class="icon-text">subscription</span>
+                            <div class="icon-img"></div>
+                        </a>
                     </div>
                 </div>
             </div>

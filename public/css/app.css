@@ -594,13 +594,10 @@ header .header-bottom .nav-menu .search-bar .icon::after {
   width: 100%;
 }
 
-#single-comic {
-  background-color: #0182f9;
-  padding-top: 60px;
-}
-
 #single-comic .thumb-img {
   position: relative;
+  background-color: #0182f9;
+  padding-top: 60px;
 }
 
 #single-comic .thumb-img .img-comics-box {
@@ -659,6 +656,7 @@ header .header-bottom .nav-menu .search-bar .icon::after {
 
 #single-comic .details-comic .shop-comic .info-shop .price-check .check-comic {
   display: flex;
+  align-items: center;
 }
 
 #single-comic .details-comic .shop-comic .info-shop .price-check .check-comic h4:first-child {
@@ -666,7 +664,14 @@ header .header-bottom .nav-menu .search-bar .icon::after {
 }
 
 #single-comic .details-comic .shop-comic .info-shop .price-check .check-comic h4:last-child {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 0;
+}
+
+#single-comic .details-comic .shop-comic .info-shop .price-check .check-comic h4:last-child a {
+  color: #fff;
+  padding: 14px 18px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #single-comic .details-comic .shop-comic .info-shop .info-comic {
@@ -735,6 +740,74 @@ header .header-bottom .nav-menu .search-bar .icon::after {
   align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#single-comic .icons-boxes {
+  background-color: #f6f6f6;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#single-comic .icons-boxes .icons-content {
+  display: flex;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  width: 25%;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#single-comic .icons-boxes .icons-content .single-icon a {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon .icon-text {
+  color: #909090;
+  font-size: 0.83em;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon .icon-img {
+  background-image: url("/images/cta-icons.png");
+  display: inline-block;
+  height: 37px;
+  width: 37px;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(1) .icon-img {
+  background-position: 0px 0;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(1):hover .icon-img {
+  background-position: 0px 37px;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(2) .icon-img {
+  background-position: 37px 0;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(2):hover .icon-img {
+  background-position: 37px 37px;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(3) .icon-img {
+  background-position: 74px 0;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(3):hover .icon-img {
+  background-position: 74px 37px;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(4) .icon-img {
+  background-position: 111px 0;
+}
+
+#single-comic .icons-boxes .icons-content .single-icon:nth-child(4):hover .icon-img {
+  background-position: 111px 37px;
 }
 
 footer {

@@ -69,10 +69,9 @@
 }
 
 #single-comic{
-    background-color: $main_color;
-    padding-top: 60px;
     .thumb-img{
-        position: relative;
+        position: relative;    background-color: $main_color;
+        padding-top: 60px;
         .img-comics-box{
             position: absolute;
             transform: translateY(-107%);
@@ -118,11 +117,20 @@
 
                     .check-comic{
                         display: flex;
+                        align-items: center;
                         h4:first-child{
                             opacity: 72%;
                         }
                         h4:last-child{
-                            border-left: 1px solid rgba(0, 0, 0, 0.2);
+
+                            display: inline-block;
+                            padding: 0;
+                            a{
+                                color: $light_color;
+                                padding: 14px 18px;
+                                border-left: $border-light;
+                            }
+
                         }
                     }
                 }
@@ -187,4 +195,52 @@
             }
         }
     }
+    .icons-boxes{
+        background-color: $sub_light_color;
+        border-top: $border-light;
+        .icons-content{
+            display: flex;
+            .single-icon{
+                border-left: $border-light;
+                width: 25%;
+                &:last-child{
+                    border-right: $border-light;
+
+                }
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 14px;
+                }
+                .icon-text{
+                    color: darken($sub_light_color, 40%);
+                    font-size: 0.83em;
+
+                }
+                .icon-img{
+                    background-image: url('/images/cta-icons.png');
+                    display: inline-block;
+                    height: 37px;
+                    width: 37px;
+                }
+
+                @for $i from 0 through 3 {
+                    &:nth-child(#{$i + 1}){
+                        .icon-img {
+                            background-position: 37px * $i 0;
+                        }
+
+                        &:hover .icon-img {
+                            background-position: 37px * $i 37px;
+                        }
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+
 }
