@@ -19,7 +19,22 @@ Route::get('/', function () {
         'series' => $comics
     ];
     return view('home', $data);
-});
+})->name('homepage');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics');
+
+    if(array_key_exists($id, $comics)){
+
+        $comic = $comics[$id];
+        $data = [
+            'comic'=> $comic
+        ];
+        return view('comic', $data);
+    }
+    abort(404);
+
+})->name('comic-details');
 
 Route::get('/contact-us', function () {
     return view('contact');

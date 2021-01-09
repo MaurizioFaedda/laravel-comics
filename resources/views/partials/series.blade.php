@@ -4,17 +4,19 @@
             <h2>current series</h2>
         </div>
         <div class="cards">
-            @foreach ($series as $serie)
+            @foreach ($series as $index => $serie)
 
-                <div class="card">
-                    <a href="#">
-                        <div class="serie-img">
-                            <img src="{{$serie['thumb']}}" alt="">
-                        </div>
+                    <div class="card">
+                        <a href="{{ route('comic-details', ['id' => $index]) }}">
+                            <div class="serie-img">
+                                <img src="{{$serie['thumb']}}" alt="">
+                            </div>
+                            </a>
+                        <a href="{{ route('comic-details', ['id' => $index]) }}">
+                        <h3>{{ $serie['series']}}</h3>
                     </a>
-                    <h3>{{ $serie['series']}}</h3>
 
-                </div>
+                    </div>
 
             @endforeach
         </div>
