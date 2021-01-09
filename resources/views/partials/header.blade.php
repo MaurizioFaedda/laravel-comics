@@ -23,7 +23,9 @@
             <div class="nav-menu">
 
                 <div class="logo">
-                    <img src="{{asset('images/dc-logo.png')}}" alt="">
+                    <a href="{{ route('homepage')}}">
+                        <img src="{{asset('images/dc-logo.png')}}" alt="">
+                    </a>
                 </div>
                 <div class="nav-bar">
                     <ul>
