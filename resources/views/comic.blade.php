@@ -20,14 +20,14 @@
             <div class="container-sx">
                 <div class="shop-comic">
                     <div class="info-shop">
-                        <h1>{{ $comic['series']}}</h1>
+                        <h1 class="uppercase">{{ $comic['series']}}</h1>
                         <div class="price-check">
                             <div class="price-comic">
                                 <h4>U.S. Price: $19.99</h4>
                             </div>
                             <div class="check-comic">
                                 <h4 class="uppercase">available</h4>
-                                <h4>Check   Availability</h4>
+                                <h4>Buy Now ▾</h4>
                             </div>
                         </div>
 

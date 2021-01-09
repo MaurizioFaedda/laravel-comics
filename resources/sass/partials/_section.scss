@@ -70,12 +70,12 @@
 
 #single-comic{
     background-color: $main_color;
-    padding-top: 40px;
+    padding-top: 60px;
     .thumb-img{
         position: relative;
         .img-comics-box{
             position: absolute;
-            transform: translateY(-100%);
+            transform: translateY(-107%);
             .img-comics-content{
                 position: relative;
                 border: 1px solid $light_color;
@@ -99,9 +99,33 @@
         .shop-comic{
             padding: 40px 0;
             display: flex;
+
             .info-shop{
                 width: calc(70% - 30px);
                 margin-right: 30px;
+                h1{
+                    color: darken($main_color, 26%);
+                }
+                .price-check{
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $price_color;
+                    color: $light_color;
+                    h4{
+                        margin: 0;
+                        padding: 14px 18px;
+                    }
+
+                    .check-comic{
+                        display: flex;
+                        h4:first-child{
+                            opacity: 72%;
+                        }
+                        h4:last-child{
+                            border-left: 1px solid rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
             }
             .adv{
                 width: 30%;
