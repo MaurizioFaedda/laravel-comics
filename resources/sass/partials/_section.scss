@@ -104,7 +104,7 @@
                 width: calc(70% - 30px);
                 margin-right: 30px;
                 h1{
-                    color: darken($main_color, 26%);
+                    color: $dark_main_color;
                 }
                 .price-check{
                     display: flex;
@@ -126,12 +126,65 @@
                         }
                     }
                 }
+                .info-comic{
+                    padding: 20px 0;
+                    p{
+                        line-height: 1.6;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                }
             }
             .adv{
                 width: 30%;
                 text-align: right;
+                h4{
+                    margin-bottom: 0;
+                }
             }
         }
 
+    }
+    .talent-specs{
+        background-color: $sub_light_color;
+        border-top: $border-light;
+        padding: 40px 0;
+        .talent-specs-content{
+            display: flex;
+            h2, h5{
+                color: $dark_main_color;
+            }
+            h2{
+                margin: 0;
+                padding: 20px 0;
+                border-bottom: $border-light;
+
+
+            }
+            h5{
+                margin: 0;
+
+            }
+            p{
+                font-size: 0.83em;
+                margin: 0;
+                width: 70%;
+            }
+
+            a{
+                color: $main_color;
+            }
+
+            .talent, .specs{
+                width: calc(50% - 20px);
+                margin-right: 20px;
+                .info-content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 12px 0;
+                    border-bottom: $border-light;
+                }
+            }
+        }
     }
 }

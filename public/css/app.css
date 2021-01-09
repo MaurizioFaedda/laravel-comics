@@ -409,7 +409,7 @@ span {
 }
 
 .container-sx {
-  max-width: 920px;
+  max-width: 1020px;
   margin: auto;
 }
 
@@ -669,9 +669,72 @@ header .header-bottom .nav-menu .search-bar .icon::after {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+#single-comic .details-comic .shop-comic .info-shop .info-comic {
+  padding: 20px 0;
+}
+
+#single-comic .details-comic .shop-comic .info-shop .info-comic p {
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 #single-comic .details-comic .shop-comic .adv {
   width: 30%;
   text-align: right;
+}
+
+#single-comic .details-comic .shop-comic .adv h4 {
+  margin-bottom: 0;
+}
+
+#single-comic .talent-specs {
+  background-color: #f6f6f6;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+}
+
+#single-comic .talent-specs .talent-specs-content {
+  display: flex;
+}
+
+#single-comic .talent-specs .talent-specs-content h2,
+#single-comic .talent-specs .talent-specs-content h5 {
+  color: #003d75;
+}
+
+#single-comic .talent-specs .talent-specs-content h2 {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#single-comic .talent-specs .talent-specs-content h5 {
+  margin: 0;
+}
+
+#single-comic .talent-specs .talent-specs-content p {
+  font-size: 0.83em;
+  margin: 0;
+  width: 70%;
+}
+
+#single-comic .talent-specs .talent-specs-content a {
+  color: #0182f9;
+}
+
+#single-comic .talent-specs .talent-specs-content .talent,
+#single-comic .talent-specs .talent-specs-content .specs {
+  width: calc(50% - 20px);
+  margin-right: 20px;
+}
+
+#single-comic .talent-specs .talent-specs-content .talent .info-content,
+#single-comic .talent-specs .talent-specs-content .specs .info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 footer {

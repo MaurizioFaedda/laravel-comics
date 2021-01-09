@@ -30,6 +30,9 @@
                                 <h4>Buy Now ▾</h4>
                             </div>
                         </div>
+                        <div class="info-comic">
+                            <p>{{$comic['description']}}</p>
+                        </div>
 
                     </div>
                     <div class="adv">
@@ -38,7 +41,56 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="talent-specs">
+            <div class="container-sx">
+                <div class="talent-specs-content">
+                    <div class="talent">
+                        <h2>Talent</h2>
+                        <div class="talent-info">
+                            <div class="info-content">
+                                <h5>Art by:</h5>
+                                <p>
+                                    @foreach ($comic['artists'] as $artist)
+                                        <a href="#">{{ $artist }}</a>
+                                        {{ !$loop->last ? ',' : '' }}
+                                    @endforeach
+                                </p>
+                            </div>
+                            <div class="info-content">
+                                <h5>Written by:</h5>
+                                <p>
+                                    @foreach ($comic['writers'] as $writer)
+                                        <a href="#">{{ $writer }}</a>
+                                        {{ !$loop->last ? ',' : '' }}
+                                    @endforeach
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <h2>Specs</h2>
+                        <div class="specs-info">
+                            <div class="info-content">
+                                <h5>Series:</h5>
+                                <p>
+                                    <a href="#">{{ $comic['series'] }}</a>
+                                </p>
+                            </div>
+                            <div class="info-content">
+                                <h5>U.S. Price:</h5>
+                                <p>{{ $comic['price']}}</p>
+                            </div>
+                            <div class="info-content">
+                                <h5>On Sale Date:</h5>
+                                <p>
+                                    {{ DateTime::createFromFormat('Y-m-d', $comic['sale_date'])->format('M d Y') }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
